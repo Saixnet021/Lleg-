@@ -1,0 +1,698 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const whatsappLink =
+	"https://wa.me/51930542028?text=Hola%20Llegó!%20Quiero%20probar%20el%20software%20para%20mi%20negocio.";
+---
+
+<Layout title="Llegó - Pagos de Yape y Plin en WhatsApp">
+	<!-- Navbar -->
+	<nav
+		class="fixed w-full z-50 bg-slate-50/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300"
+	>
+		<div
+			class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between"
+		>
+			<a
+				href="/"
+				class="text-2xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center gap-2"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="w-8 h-8 text-indigo-600"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+					></path><polyline points="22 4 12 14.01 9 11.01"
+					></polyline></svg
+				>
+				Llegó
+			</a>
+
+			<div class="hidden md:flex items-center gap-8">
+				<a
+					href="como-funciona"
+					class="text-slate-600 hover:text-slate-900 font-medium transition-colors"
+					>Cómo funciona</a
+				>
+				<a
+					href="precios"
+					class="text-slate-600 hover:text-slate-900 font-medium transition-colors"
+					>Precios</a
+				>
+				<a
+					href={whatsappLink}
+					target="_blank"
+					class="px-5 py-2.5 rounded-xl font-semibold text-slate-700 hover:bg-slate-100 transition-all"
+				>
+					Contactar Ventas
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<main class="pt-20">
+		<!-- Hero Section -->
+		<section class="py-12 md:py-20 px-6 max-w-6xl mx-auto">
+			<div class="flex flex-col md:flex-row items-center gap-12 md:gap-8">
+				<!-- Hero Content -->
+				<div class="text-center md:text-left flex-1 animate-fade-in-up">
+					<div
+						class="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 px-4 py-2 rounded-full text-indigo-700 text-sm font-semibold mb-8"
+					>
+						<span class="relative flex h-2 w-2">
+							<span
+								class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"
+							></span>
+							<span
+								class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"
+							></span>
+						</span>
+						Nuevo: Soporte Multi-tienda
+					</div>
+
+					<h1
+						class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight"
+					>
+						Tus pagos de <span
+							class="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-fuchsia-600"
+							>Yape</span
+						> y <span
+							class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500"
+							>Plin</span
+						>,<br />
+						ahora en el <span
+							class="underline decoration-emerald-400 decoration-4 underline-offset-4"
+							>WhatsApp</span
+						> de tu equipo.
+					</h1>
+
+					<p
+						class="text-lg md:text-xl text-slate-500 max-w-xl mx-auto md:mx-0 mb-8 leading-relaxed"
+					>
+						El primer software que detecta pagos automáticamente y
+						notifica a tus empleados sin compartir tu cuenta
+						bancaria.
+					</p>
+
+					<div class="flex flex-col sm:flex-row items-center gap-4">
+						<a
+							href={whatsappLink}
+							target="_blank"
+							class="w-full sm:w-auto px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white rounded-2xl font-bold text-lg shadow-lg shadow-emerald-500/30 transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2"
+						>
+							Prueba 7 días gratis
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-5 h-5"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								><path d="M5 12h14"></path><path
+									d="m12 5 7 7-7 7"></path></svg
+							>
+						</a>
+						<a
+							href="como-funciona"
+							class="w-full sm:w-auto px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-2xl font-bold text-lg hover:border-slate-300 hover:bg-slate-50 transition-all text-center"
+						>
+							Ver demo en video
+						</a>
+					</div>
+				</div>
+
+				<!-- Chat Simulator (Trust Element) -->
+				<div
+					class="flex-1 w-full max-w-sm md:max-w-md mx-auto animate-fade-in-up"
+					style="animation-delay: 200ms;"
+				>
+					<div
+						class="bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden relative"
+					>
+						<!-- Phone Notch/Header -->
+						<div
+							class="bg-slate-50 border-b border-slate-100 p-4 flex items-center gap-3"
+						>
+							<div
+								class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="w-5 h-5"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									><path
+										d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+									></path><circle cx="9" cy="7" r="4"
+									></circle><path
+										d="M22 21v-2a4 4 0 0 0-3-3.87"
+									></path><path d="M16 3.13a4 4 0 0 1 0 7.75"
+									></path></svg
+								>
+							</div>
+							<div>
+								<p
+									class="text-xs text-slate-500 font-semibold uppercase tracking-wide"
+								>
+									WhatsApp de Subencargado
+								</p>
+								<p class="font-bold text-slate-900 text-sm">
+									Caja Principal - Sede 1
+								</p>
+							</div>
+						</div>
+
+						<!-- Chat Area -->
+						<div
+							class="p-6 bg-[#efe7dd] min-h-[220px] flex flex-col justify-end gap-3 backdrop-opacity-10"
+							style="background-image: radial-gradient(#cbd5e1 1px, transparent 1px); background-size: 20px 20px;"
+						>
+							<div
+								class="bg-white p-3 rounded-lg rounded-tl-none shadow-sm max-w-[85%] self-start text-sm text-slate-800"
+							>
+								<p
+									class="font-bold text-indigo-600 text-xs mb-1"
+								>
+									Llegó Bot 🤖
+								</p>
+								<p>✅ <strong>¡Pago confirmado!</strong></p>
+								<p class="mt-1">
+									Juan Pérez te envió <strong>S/ 45.00</strong
+									> vía Yape.
+								</p>
+								<p
+									class="text-[10px] text-slate-400 text-right mt-1"
+								>
+									10:42 AM
+								</p>
+							</div>
+
+							<div
+								class="bg-emerald-500 p-3 rounded-lg rounded-tr-none shadow-sm max-w-[80%] self-end text-sm text-white"
+							>
+								<p>Excelente, ya preparo el pedido 👍</p>
+								<p
+									class="text-[10px] text-emerald-100 text-right mt-1 flex items-center justify-end gap-1"
+								>
+									10:43 AM <span class="text-white font-bold"
+										>✓✓</span
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Floating decorative elements -->
+					<div
+						class="absolute -z-10 top-10 -right-10 w-20 h-20 bg-emerald-400 rounded-full blur-3xl opacity-20"
+					>
+					</div>
+					<div
+						class="absolute -z-10 bottom-10 -left-10 w-20 h-20 bg-indigo-400 rounded-full blur-3xl opacity-20"
+					>
+					</div>
+				</div>
+			</div>
+
+			<!-- Social Proof -->
+			<div
+				class="mt-16 md:mt-24 pt-8 border-t border-slate-200/60 max-w-3xl mx-auto text-center"
+			>
+				<p class="text-slate-500 font-medium mb-6">
+					Más de 500 negocios peruanos confían en Llegó
+				</p>
+				<div
+					class="flex flex-wrap justify-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
+				>
+					<div
+						class="flex items-center gap-2 font-bold text-xl text-slate-700"
+					>
+						<span class="text-2xl">🍔</span> BurgerKing
+					</div>
+					<div
+						class="flex items-center gap-2 font-bold text-xl text-slate-700"
+					>
+						<span class="text-2xl">💇‍♀️</span> Montalvo
+					</div>
+					<div
+						class="flex items-center gap-2 font-bold text-xl text-slate-700"
+					>
+						<span class="text-2xl">☕</span> Starbucks
+					</div>
+					<div
+						class="flex items-center gap-2 font-bold text-xl text-slate-700"
+					>
+						<span class="text-2xl">💊</span> Inkafarma
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Steps Section -->
+		<section id="como-funciona" class="py-24 bg-white">
+			<div class="max-w-6xl mx-auto px-6">
+				<h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+					Tu negocio automatizado en 3 pasos
+				</h2>
+
+				<div class="grid md:grid-cols-3 gap-12 relative">
+					<!-- Connecting Line (Desktop) -->
+					<div
+						class="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-indigo-100 via-emerald-100 to-indigo-100 -z-1 border-t-2 border-dashed border-slate-200"
+					>
+					</div>
+
+					<!-- Step 1 -->
+					<div
+						class="relative bg-white/70 backdrop-blur-md p-8 rounded-3xl border border-slate-100 text-center hover:shadow-xl shadow-sm transition-shadow duration-300 group"
+					>
+						<div
+							class="w-20 h-20 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-10 h-10"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								><rect width="20" height="12" x="2" y="6" rx="2"
+								></rect><circle cx="12" cy="12" r="2"
+								></circle><path d="M6 12h.01"></path><path
+									d="M18 12h.01"></path></svg
+							>
+						</div>
+						<h3 class="text-xl font-bold mb-3">
+							1. Vincula tu cuenta
+						</h3>
+						<p class="text-slate-600 leading-relaxed">
+							Conecta tu Yape o Plin escaneando un QR seguro. No
+							necesitamos tu clave.
+						</p>
+					</div>
+
+					<!-- Step 2 -->
+					<div
+						class="relative bg-white/70 backdrop-blur-md p-8 rounded-3xl border border-slate-100 text-center hover:shadow-xl shadow-sm transition-shadow duration-300 group"
+					>
+						<div
+							class="w-20 h-20 bg-fuchsia-100 text-fuchsia-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-10 h-10"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								><path
+									d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+								></path><circle cx="9" cy="7" r="4"
+								></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"
+								></path><path d="M16 3.13a4 4 0 0 1 0 7.75"
+								></path></svg
+							>
+						</div>
+						<h3 class="text-xl font-bold mb-3">
+							2. Agrega a tu equipo
+						</h3>
+						<p class="text-slate-600 leading-relaxed">
+							Ingresa los números de WhatsApp de tus empleados o
+							encargados de caja.
+						</p>
+					</div>
+
+					<!-- Step 3 -->
+					<div
+						class="relative bg-white/70 backdrop-blur-md p-8 rounded-3xl border border-slate-100 text-center hover:shadow-xl shadow-sm transition-shadow duration-300 group"
+					>
+						<div
+							class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-10 h-10"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"
+								></path></svg
+							>
+						</div>
+						<h3 class="text-xl font-bold mb-3">
+							3. ¡Mensaje al instante!
+						</h3>
+						<p class="text-slate-600 leading-relaxed">
+							Cada vez que recibas un pago, tu personal recibe una
+							alerta en <span class="font-bold text-emerald-600"
+								>1.5 segundos</span
+							>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing Section -->
+		<section id="precios" class="py-24 px-6 bg-slate-50">
+			<div class="max-w-md mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+					Precio simple y transparente
+				</h2>
+
+				<div
+					class="bg-white rounded-[2rem] p-8 shadow-2xl border border-slate-100 relative overflow-hidden transform hover:-translate-y-1 transition-transform duration-300"
+				>
+					<div
+						class="absolute top-0 right-0 bg-emerald-500 text-white text-xs font-bold px-4 py-2 rounded-bl-xl uppercase tracking-wider"
+					>
+						Más Popular
+					</div>
+
+					<h3 class="text-2xl font-bold text-slate-800">
+						Plan Emprendedor
+					</h3>
+					<div class="mt-4 flex items-baseline gap-1">
+						<span
+							class="text-5xl font-extrabold tracking-tight text-slate-900"
+							>S/ 29.90</span
+						>
+						<span class="text-slate-500 font-medium">/mes</span>
+					</div>
+					<p class="mt-4 text-slate-500">
+						Todo lo que necesitas para controlar tu negocio.
+					</p>
+
+					<ul class="mt-8 space-y-4">
+						<li class="flex items-center gap-3 text-slate-700">
+							<div
+								class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="w-4 h-4"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="3"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									><polyline points="20 6 9 17 4 12"
+									></polyline></svg
+								>
+							</div>
+							<span>Pagos ilimitados</span>
+						</li>
+						<li class="flex items-center gap-3 text-slate-700">
+							<div
+								class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="w-4 h-4"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="3"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									><polyline points="20 6 9 17 4 12"
+									></polyline></svg
+								>
+							</div>
+							<span>Integración Yape y Plin</span>
+						</li>
+						<li class="flex items-center gap-3 text-slate-700">
+							<div
+								class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="w-4 h-4"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="3"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									><polyline points="20 6 9 17 4 12"
+									></polyline></svg
+								>
+							</div>
+							<span>Hasta 3 números de staff</span>
+						</li>
+						<li class="flex items-center gap-3 text-slate-700">
+							<div
+								class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="w-4 h-4"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="3"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									><polyline points="20 6 9 17 4 12"
+									></polyline></svg
+								>
+							</div>
+							<span>Reportes mensuales</span>
+						</li>
+					</ul>
+
+					<a
+						href={whatsappLink}
+						target="_blank"
+						class="mt-8 block w-full py-4 bg-slate-900 text-white text-center font-bold rounded-xl hover:bg-slate-800 transition-colors shadow-lg"
+					>
+						Empezar ahora
+					</a>
+					<p class="text-center text-xs text-slate-400 mt-4">
+						Cancela cuando quieras.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ Section -->
+		<section class="py-24 px-6 bg-white">
+			<div class="max-w-3xl mx-auto">
+				<h2 class="text-3xl font-bold text-center mb-12">
+					Preguntas Frecuentes
+				</h2>
+				<div class="space-y-4">
+					<details
+						class="group bg-slate-50 p-6 rounded-2xl border border-slate-100 [&_summary::-webkit-details-marker]:hidden"
+					>
+						<summary
+							class="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900 font-bold"
+						>
+							<h2 class="text-lg">¿Es seguro?</h2>
+							<span class="relative h-5 w-5 shrink-0">
+								<svg
+									class="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"></path>
+								</svg>
+							</span>
+						</summary>
+						<p class="mt-4 leading-relaxed text-slate-600">
+							Sí, es 100% seguro. No tocamos tu dinero ni pedimos
+							acceso bancario directo. Solo leemos la confirmación
+							de pago oficial (notificación/correo) para validarla
+							en tiempo real.
+						</p>
+					</details>
+
+					<details
+						class="group bg-slate-50 p-6 rounded-2xl border border-slate-100 [&_summary::-webkit-details-marker]:hidden"
+					>
+						<summary
+							class="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900 font-bold"
+						>
+							<h2 class="text-lg">
+								¿Necesito instalar algo en el celular de mi
+								empleado?
+							</h2>
+							<span class="relative h-5 w-5 shrink-0">
+								<svg
+									class="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"></path>
+								</svg>
+							</span>
+						</summary>
+						<p class="mt-4 leading-relaxed text-slate-600">
+							No. Ellos solo necesitan tener WhatsApp instalado
+							para recibir las notificaciones automáticas de
+							"Llegó".
+						</p>
+					</details>
+
+					<details
+						class="group bg-slate-50 p-6 rounded-2xl border border-slate-100 [&_summary::-webkit-details-marker]:hidden"
+					>
+						<summary
+							class="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900 font-bold"
+						>
+							<h2 class="text-lg">¿Funciona con Plin y Yape?</h2>
+							<span class="relative h-5 w-5 shrink-0">
+								<svg
+									class="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"></path>
+								</svg>
+							</span>
+						</summary>
+						<p class="mt-4 leading-relaxed text-slate-600">
+							Sí, nuestro sistema está optimizado para detectar y
+							validar transferencias de ambas billeteras digitales
+							simultáneamente.
+						</p>
+					</details>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+			<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+				<div class="col-span-1 md:col-span-2">
+					<h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-6 h-6 text-indigo-400"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+							></path><polyline points="22 4 12 14.01 9 11.01"
+							></polyline></svg
+						>
+						Llegó
+					</h3>
+					<p class="text-slate-400 max-w-sm">
+						Automatizamos la validación de pagos digitales para que
+						te enfoques en crecer tu negocio.
+					</p>
+				</div>
+				<div>
+					<h4 class="font-bold mb-4">Producto</h4>
+					<ul class="space-y-2 text-slate-400 text-sm">
+						<li>
+							<a href="como-funciona" class="hover:text-white"
+								>Cómo funciona</a
+							>
+						</li>
+						<li>
+							<a href="precios" class="hover:text-white"
+								>Precios</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="font-bold mb-4">Legal</h4>
+					<ul class="space-y-2 text-slate-400 text-sm">
+						<li>
+							<a href="#" class="hover:text-white"
+								>Términos y condiciones</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div
+				class="max-w-6xl mx-auto px-6 mt-12 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm"
+			>
+				© 2024 Llegó S.A.C. Todos los derechos reservados. Hecho con ❤️
+				en Perú.
+			</div>
+		</footer>
+
+		<!-- Floating WhatsApp Button -->
+		<a
+			href={whatsappLink}
+			target="_blank"
+			class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-2xl transition-all hover:scale-110 flex items-center justify-center group"
+			aria-label="Contactar por WhatsApp"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="w-8 h-8 fill-current"
+				viewBox="0 0 24 24"
+			>
+				<path
+					d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+				></path>
+			</svg>
+			<span
+				class="absolute right-full mr-4 bg-white text-slate-800 px-3 py-1 rounded-lg text-sm font-bold shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden sm:block"
+			>
+				¡Escríbenos!
+			</span>
+		</a>
+
+		<style>
+			@keyframes fade-in-up {
+				0% {
+					opacity: 0;
+					transform: translateY(20px);
+				}
+				100% {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			.animate-fade-in-up {
+				animation: fade-in-up 0.8s ease-out forwards;
+			}
+		</style>
+	</main>
+</Layout>
